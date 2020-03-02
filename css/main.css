@@ -390,6 +390,19 @@ footer .copyright span.line {
     clear: both;
 }
 
+@media (min-width: 1680px) {
+    .cover_block .web_cover {
+        height: 950px;
+    }
+     .cover_block .web_cover .registration_link {
+        left: calc(50% - 600px);
+    }
+    .cover_block .web_cover img {
+        width: 550px;
+    }
+}
+
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .cover_block .web_cover {
         height: 700px;
