@@ -394,9 +394,11 @@ footer .copyright span.line {
     .cover_block .web_cover {
         height: 950px;
     }
-     .cover_block .web_cover .registration_link {
+
+    .cover_block .web_cover .registration_link {
         left: calc(50% - 600px);
     }
+
     .cover_block .web_cover img {
         width: 550px;
     }
@@ -1234,15 +1236,16 @@ footer .copyright span.line {
 }
 
 .fill_form .fill_item.horizontal label.item_title.w2 {
-    width: calc(100% - 100px);
+    width: calc(100% - 150px);
 }
 
 .fill_form .fill_item.horizontal .item_content.w2 {
-    min-width: 100px;
+    min-width: 150px;
 }
 
 .fill_form .fill_item.horizontal .item_content.w2 .btn {
-    min-width: 100%;
+    width: 140px;
+    overflow: hidden;
 }
 
 .fill_form .fill_item.horizontal .item_content.verification_fill .form-control {
@@ -1291,6 +1294,10 @@ footer .copyright span.line {
     }
 
     .fill_form .fill_item.horizontal label.item_title.w2 {
+        width: 100%;
+    }
+
+    .fill_form .fill_item.horizontal .item_content.w2 .btn {
         width: 100%;
     }
 }
@@ -1447,6 +1454,27 @@ select::-ms-expand {
 
 .pic_upload_box .btn_browse {
     width: auto;
+}
+
+
+
+/*----------- 檔案上傳元件 -----------*/
+.file_upload .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.file_upload .inputfile:focus+label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.file_upload .inputfile+label * {
+    pointer-events: none;
 }
 
 
